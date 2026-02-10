@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AR Cube Test</title>
+
+  <!-- Подключаем библиотеки -->
+  <script src="assets/js/aframe.min.js"></script>
+  <script src="assets/js/aframe-ar.js"></script>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+  
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+
+    <!-- Маркер Hiro -->
+    <a-marker preset="hiro">
+
+      <!-- Куб -->
+      <a-box
+        position="0 0.5 0"
+        depth="0.5"
+        height="0.5"
+        width="0.5"
+        color="#4CC3D9">
+      </a-box>
+
+    </a-marker>
+
+    <!-- Камера -->
+    <a-entity camera></a-entity>
+
+  </a-scene>
+
+</body>
+</html>
+
+
